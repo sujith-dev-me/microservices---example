@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: employee-service
+  config:
+    #tells the application from where to fetch the configurations
+    #'optional' tells the app to not fail even if the configuration server is not found
+    import: "optional:configserver:http://localhost:8088"
